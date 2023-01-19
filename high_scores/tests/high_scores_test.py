@@ -6,6 +6,12 @@ from src.high_scores import latest, personal_best, personal_top_three
 
 
 class HighScoresTest(unittest.TestCase):
+
+    scores = [5,47,45,4,80]
+
+    def test_return_latest_score(self):
+        self.assertEqual(80, latest(self.scores))
+
     
     # Tests
 
@@ -23,4 +29,4 @@ class HighScoresTest(unittest.TestCase):
 
     # Test top three when there is only one
     
-hello
+
